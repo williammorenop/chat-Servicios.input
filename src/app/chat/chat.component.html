@@ -1,0 +1,17 @@
+<p>
+  chat works!
+</p>
+<div>
+  <form (ngSubmit)="procesarMensaje()">
+    <div>
+      <label for="txtNombre">Nombre: </label>
+      <input type = "text" id="txtNombre" name= "nombre" [(ngModel)]='nombre'>
+    </div>
+    <div>
+      <label for="txtMensaje">Cedula: </label>
+      <input type = "text" id="txtMensaje" name= "mensaje" [(ngModel)]='texto'>
+    </div>
+    <button type=submit>Enviar</button>
+  </form>
+</div>
+<app-message-list></app-message-list>
